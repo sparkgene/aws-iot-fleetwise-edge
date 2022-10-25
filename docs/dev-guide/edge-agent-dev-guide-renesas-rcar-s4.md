@@ -51,11 +51,11 @@ The following instructions use the development machine(Ubuntu 20.04) to build an
 
    ```bash
      setenv _booti 'booti 0x48080000 - 0x48000000'
-     setenv emmc1 'setenv bootargs rw root=/dev/mmcblk0p1 rootwait ip=dhcp maxcpus=1'
-     setenv emmc2 ext4load mmc 0:1 0x48080000 /boot/Image
-     setenv emmc3 ext4load mmc 0:1 0x48000000 /boot/r8a779f0-spider.dtb
-     setenv emmc 'run emmc1; run emmc2; run emmc3; run _booti'
-     setenv bootcmd 'run emmc'
+     setenv sd1 'setenv bootargs rw root=/dev/mmcblk0p1 rootwait ip=dhcp maxcpus=1'
+     setenv sd2 ext4load mmc 0:1 0x48080000 /boot/Image
+     setenv sd3 ext4load mmc 0:1 0x48000000 /boot/r8a779f0-spider.dtb
+     setenv sd 'run sd1; run sd2; run sd3; run _booti'
+     setenv bootcmd 'run sd'
      saveenv
      boot
    ```
