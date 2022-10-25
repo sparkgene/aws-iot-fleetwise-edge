@@ -52,6 +52,9 @@ The following instructions use the development machine(Ubuntu 20.04) to build an
 1. Connect an Ethernet cable.
 1. Connect develop machine to R-Car S4 Spider board USB port.
 1. Power ON S4 Spider board.
+
+   ![](./images/rcar-s4-spider.png)
+
 1. Use screen command on your develop machine terminal to veiw serial output.
 1. Push Power button to boot the system. You can see the count down during U-Boot. Hit enter key to stop U-Boot.
 1. Enter following settings to flash the SD card data to board
