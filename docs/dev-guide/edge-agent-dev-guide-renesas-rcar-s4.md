@@ -53,12 +53,11 @@ The following instructions use the development machine(Ubuntu 20.04) to build an
 1. Connect develop machine to R-Car S4 Spider board USB port.
    - USB port is depending on board revision(until B0-1st or since B0-2nd).
    - For more detail, please refer to the section 2.1 "Linux BSP" in "R-Car S4_StartupGuide_x_x_x.pdf".
-1. Power ON S4 Spider board.
 
    ![](./images/rcar-s4-spider.png)
 
 1. Use screen command on your develop machine terminal to veiw serial output.
-1. Push Power button to boot the system. You can see the count down during U-Boot. Hit enter key to stop U-Boot.
+1. Power on S4 Spider board. You can see the count down during U-Boot. Hit enter key to stop U-Boot.
 1. Enter following settings to flash the SD card data to board
 
    ```bash
