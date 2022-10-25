@@ -51,6 +51,8 @@ The following instructions use the development machine(Ubuntu 20.04) to build an
 1. Insert the SD-card into the R-Car S4 Spider board’s SD-card slot.
 1. Connect an Ethernet cable.
 1. Connect develop machine to R-Car S4 Spider board USB port.
+   - USB port is depending on board revision(until B0-1st or since B0-2nd).
+   - For more detail, please refer to the section 2.1 "Linux BSP" in "R-Car S4_StartupGuide_x_x_x.pdf".
 1. Power ON S4 Spider board.
 
    ![](./images/rcar-s4-spider.png)
