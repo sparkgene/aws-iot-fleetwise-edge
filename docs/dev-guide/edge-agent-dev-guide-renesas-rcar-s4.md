@@ -12,6 +12,8 @@ This section describes how to deploy AWS IoT FleetWise Edge Agent onto an Renesa
       - For more details about building IPL, please refer to section 6.2.3 "How to build" in "RENESAS_ICUMX_IPL_for_R-Car_Gen4_Users_Manual_E.pdf"
    1. Please change SW3 and SW6 on the CPU board.
       - For more details, please refer to section 3.7.8.1 "Enable SD Card" in "R-Car S4_StartupGuide_x_x_x.pdf"
+- **DHCP server with internet connection**
+  - In this guide, spider board requires DHCP server to connect internet.
 - **AWS IoT FleetWise Edge Agent Compiled for ARM64**
   — If you are using an EC2 Graviton instance as your development machine, you will have completed this already above.
 
