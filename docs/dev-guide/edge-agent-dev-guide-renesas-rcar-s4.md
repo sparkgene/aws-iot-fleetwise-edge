@@ -5,7 +5,7 @@ This section describes how to deploy AWS IoT FleetWise Edge Agent onto an Renesa
 ## Prerequisites
 
 - **Renesas Electronics Corporation R-Car S4 Reference Board/Spider**
-  - Spider board has eMMC and sdcard slot but the can't use simalutaneously.
+  - Spider board has eMMC and micro SD-card slot but the can't use simalutaneously.
   - For using sdcard, please execute following two steps.
    1. Please flash IPL which support booting from sdcard.
       - It requires to build IPL with CA_LOAD_TYPE=1 option.
@@ -31,7 +31,7 @@ This section describes how to deploy AWS IoT FleetWise Edge Agent onto an Renesa
 
 The following instructions use the development machine(Ubuntu 20.04) to build an SD-card image based on the Ubuntu variant of the Renesas Linux BSP version 5.10.41.
 
-1. Run the following _on the development machine_ to build SD card image:
+1. Run the following _on the development machine_ to build SD-card image:
 
    ```bash
     cd ~/aws-iot-fleetwise-edge \
@@ -40,7 +40,7 @@ The following instructions use the development machine(Ubuntu 20.04) to build an
 
 ## Flash the SD-Card Image
 
-1. Run the following to write the image to SD card:
+1. Run the following to write the image to micro SD-card:
 
    ```bash
     sudo dd if=./Ubuntu-20.04.5-rootfs-image-rcar-spider-sdcard.ext4 of=/dev/sdc bs=1M status=progress
@@ -48,7 +48,7 @@ The following instructions use the development machine(Ubuntu 20.04) to build an
 
 ## Specify Initial Board Configuration
 
-1. Insert the SD-card into the R-Car S4 Spider board’s SD-card slot.
+1. Insert the micro SD-card into the R-Car S4 Spider board’s micro SD-card slot.
 1. Connect an Ethernet cable.
 1. Connect develop machine to R-Car S4 Spider board USB port.
    - USB port is depending on board revision(until B0-1st or since B0-2nd).
@@ -58,7 +58,7 @@ The following instructions use the development machine(Ubuntu 20.04) to build an
 
 1. Use screen command on your develop machine terminal to veiw serial output.
 1. Power on S4 Spider board. You can see the count down during U-Boot. Hit enter key to stop U-Boot.
-1. Enter following settings to flash the SD card data to board
+1. Enter following settings to flash the micro SD-card data to board
 
    ```bash
      setenv _booti 'booti 0x48080000 - 0x48000000'
